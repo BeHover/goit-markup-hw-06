@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/styles.css" rel="stylesheet" />
 
     <title>HTML+CSS Bootcamp</title>
 
@@ -13,20 +12,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
 
-    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
+
   <body>
     <header class="header">
       <div class="container navbar">
-        <a href="/" class="logo"><span>Web</span>Studio</a>
+        <a href="index.html" class="logo"><span>Web</span>Studio</a>
 
         <nav>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="/" class="nav-link">Студія</a>
+              <a href="index.html" class="nav-link active">Студія</a>
             </li>
             <li class="nav-item">
-              <a href="/portfolio.html" class="nav-link active">Портфоліо</a>
+              <a href="portfolio.html" class="nav-link">Портфоліо</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Контакти</a>
@@ -34,27 +34,31 @@
           </ul>
         </nav>
 
-        <div class="contacts">
-          <a href="mailto:info@devstudio.com" class="contacts-link">
-            <svg width="16" height="12" class="contacts-icon">
-              <use href="/images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-          <a href="tel:+380961111111" class="contacts-link">
-            <svg width="10" height="16" class="contacts-icon">
-              <use href="/images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </div>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="contacts-link">
+              <svg width="16" height="12" class="contacts-icon">
+                <use href="images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="contacts-link">
+              <svg width="10" height="16" class="contacts-icon">
+                <use href="images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
       <section class="portfolio section">
         <div class="container">
-          <h2 class="section-title" style="display: none;">Наші роботи</h2>
+          <h2 class="section-title" style="display: none">Наші роботи</h2>
           
           <ul class="controls-list">
             <li class="controls-item">
@@ -90,8 +94,8 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
-                <div class="project-info">
-                  <p class="project-name">Технокряк</p>
+                <div class="project-content">
+                  <h3 class="project-name">Технокряк</h3>
                   <p class="project-type">Веб-сайт</p>
                 </div>
               </a>
@@ -111,8 +115,8 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
-                <div class="project-info">
-                  <p class="project-name">Постер New Orlean vs Golden Star</p>
+                <div class="project-content">
+                  <h3 class="project-name">Постер New Orlean vs Golden Star</h3>
                   <p class="project-type">Дизайн</p>
                 </div>
               </a>
@@ -132,8 +136,8 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
-                <div class="project-info">
-                  <p class="project-name">Ресторан Seafood</p>
+                <div class="project-content">
+                  <h3 class="project-name">Ресторан Seafood</h3>
                   <p class="project-type">Додаток</p>
                 </div>
               </a>
@@ -153,8 +157,8 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
-                <div class="project-info">
-                  <p class="project-name">Проєкт Prime</p>
+                <div class="project-content">
+                  <h3 class="project-name">Проєкт Prime</h3>
                   <p class="project-type">Маркетинг</p>
                 </div>
               </a>
@@ -174,8 +178,8 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
-                <div class="project-info">
-                  <p class="project-name">Проєкт Boxes</p>
+                <div class="project-content">
+                  <h3 class="project-name">Проєкт Boxes</h3>
                   <p class="project-type">Додаток</p>
                 </div>
               </a>
@@ -195,8 +199,8 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
-                <div class="project-info">
-                  <p class="project-name">Inspiration has no Borders</p>
+                <div class="project-content">
+                  <h3 class="project-name">Inspiration has no Borders</h3>
                   <p class="project-type">Веб-сайт</p>
                 </div>
               </a>
@@ -216,8 +220,8 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
-                <div class="project-info">
-                  <p class="project-name">Видання Limited Edition</p>
+                <div class="project-content">
+                  <h3 class="project-name">Видання Limited Edition</h3>
                   <p class="project-type">Дизайн</p>
                 </div>
               </a>
@@ -237,8 +241,8 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
-                <div class="project-info">
-                  <p class="project-name">Проект LAB</p>
+                <div class="project-content">
+                  <h3 class="project-name">Проект LAB</h3>
                   <p class="project-type">Маркетинг</p>
                 </div>
               </a>
@@ -258,8 +262,8 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
-                <div class="project-info">
-                  <p class="project-name">Growing Business</p>
+                <div class="project-content">
+                  <h3 class="project-name">Growing Business</h3>
                   <p class="project-type">Додаток</p>
                 </div>
               </a>
@@ -272,15 +276,11 @@
     <footer class="footer">
       <div class="container footer-content">
         <div class="contacts-info">
-          <a href="/" class="logo"><span>Web</span>Studio</a>
+          <a href="index.html" class="logo"><span>Web</span>Studio</a>
           <address>
             <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
-            <a href="mailto:info@devstudio.com" class="footer-link">
-              info@devstudio.com
-            </a>
-            <a href="tel:+380961111111" class="footer-link">
-              +38 096 111 11 11
-            </a>
+            <a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a>
           </address>
         </div>
 
@@ -290,28 +290,28 @@
             <li class="social-links-item">
               <a href="#" class="social-link flex">
                 <svg width="20" height="20" class="social-icon">
-                  <use href="/images/icons.svg#icon-instagram"></use>
+                  <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
               <a href="#" class="social-link flex">
                 <svg width="20" height="20" class="social-icon">
-                  <use href="/images/icons.svg#icon-twitter"></use>
+                  <use href="images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
               <a href="#" class="social-link flex">
                 <svg width="20" height="20" class="social-icon">
-                  <use href="/images/icons.svg#icon-facebook"></use>
+                  <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
               <a href="#" class="social-link flex">
                 <svg width="20" height="20" class="social-icon">
-                  <use href="/images/icons.svg#icon-linkedin"></use>
+                  <use href="images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -321,11 +321,11 @@
         <div class="subscribe-form">
           <p>Підпишіться на розсилку</p>
           <form>
-            <input type="email" name="email" class="input-field" placeholder="E-mail" />
+            <input type="email" name="email" class="input-field" placeholder="E-mail" required />
             <button type="submit" class="btn btn-primary">
               Підписатися
               <svg width="24" height="24" class="btn-right-icon">
-                <use href="/images/icons.svg#icon-send"></use>
+                <use href="images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
